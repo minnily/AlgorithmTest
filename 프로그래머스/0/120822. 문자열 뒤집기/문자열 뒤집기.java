@@ -9,3 +9,10 @@ class Solution {
         return answer.toString();
     }
 }
+
+// 더 간편한 다른 방법
+class Solution {
+    public String solution(String myString) {
+        return new StringBuilder(myString).reverse().toString();
+    }
+}
