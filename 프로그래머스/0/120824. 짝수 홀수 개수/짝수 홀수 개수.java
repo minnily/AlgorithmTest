@@ -12,3 +12,14 @@ class Solution {
         return answer;
     }
 }
+
+//스트림으로 사용하는 방법
+
+import java.util.stream.IntStream;
+import java.util.Arrays;
+
+class Solution {
+    public int[] solution(int[] numList) {
+        return IntStream.of((int) Arrays.stream(numList).filter(i -> i % 2 == 0).count(), (int) Arrays.stream(numList).filter(i -> i % 2 == 1).count()).toArray();
+    }
+}
